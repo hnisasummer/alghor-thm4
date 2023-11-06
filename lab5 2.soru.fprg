@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="rcrdq"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-05 12:40:33 &#214;&#214;"/>
+        <attribute name="created" value="cmNyZHE7TUFVTUNIOzIwMjMtMTEtMDU7MTI6MDY6MzMgw5bDljsyNTI3"/>
+        <attribute name="edited" value="cmNyZHE7TUFVTUNIOzIwMjMtMTEtMDU7MTI6NDA6MzMgw5bDljs0OzI2MzY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="1 basla&#13;&#10;2 i=0&#13;&#10;3 b=0&#13;&#10;4 hbhi=0&#13;&#10;5 devam = true&#13;&#10;6 oku say&#305;&#13;&#10;7 eger say&#305;=-1 ise git 5&#13;&#10;   deg&#305;lse eger say&#305;%2=0 ise i++ tekrarla 6&#13;&#10;     deg&#305;lse eger say&#305;%5=0 ise b++  tekrarla 6&#13;&#10;       deg&#305;lse say&#305;%10=0 ise hbhi++ tekrarla 6&#13;&#10;8 yaz i,hbhi,b&#13;&#10;9 b&#305;t&#305;r"/>
+            <declare name="i, hbhi, b, say&#305;" type="Integer" array="False" size=""/>
+            <assign variable="i" expression="0"/>
+            <assign variable="b" expression="0"/>
+            <assign variable="hbhi" expression="0"/>
+            <declare name="devam" type="Boolean" array="False" size=""/>
+            <assign variable="devam" expression="true"/>
+            <while expression="devam">
+                <input variable="say&#305;"/>
+                <if expression="say&#305;=-1">
+                    <then>
+                        <assign variable="devam" expression="false"/>
+                    </then>
+                    <else>
+                        <if expression="say&#305;%2=0">
+                            <then>
+                                <assign variable="i" expression="i+1"/>
+                            </then>
+                            <else>
+                                <if expression="say&#305;%5=0">
+                                    <then>
+                                        <assign variable="b" expression="b+1"/>
+                                    </then>
+                                    <else>
+                                        <if expression="say&#305;%10=0">
+                                            <then>
+                                                <assign variable="hbhi" expression="hbhi+1"/>
+                                            </then>
+                                            <else/>
+                                        </if>
+                                    </else>
+                                </if>
+                            </else>
+                        </if>
+                    </else>
+                </if>
+            </while>
+            <output expression="&quot;sonuclar&#305;k&#305;ye bolunenler:&quot;&amp;i&amp;&quot;bese bolunenler:&quot;&amp;b&amp; &quot;hem bese hem &#305;k&#305;ye bolunenler:&quot;&amp;hbhi" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

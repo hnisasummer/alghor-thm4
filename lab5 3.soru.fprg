@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="rcrdq"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-11-05 01:24:28 &#214;&#214;"/>
+        <attribute name="created" value="cmNyZHE7TUFVTUNIOzIwMjMtMTEtMDU7MDE6MDA6NTAgw5bDljsyNTE4"/>
+        <attribute name="edited" value="cmNyZHE7TUFVTUNIOzIwMjMtMTEtMDU7MDE6MjQ6Mjggw5bDljsyOzI2Mzg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="1 basla&#13;&#10;2 oku x1 ,x2&#13;&#10;3 devam=true&#13;&#10;4 ort=0&#13;&#10;5 eger x1=x2 ise n=n+2 ,top=top+x1+x2 ,ort = top/n&#13;&#10;   deg&#305;lse n=n+2 , top= top+x1+x2, ort =top/n&#13;&#10;6 yaz ort&#13;&#10;7 b&#305;t&#305;r"/>
+            <declare name="x1, x2, n, top, ort" type="Real" array="False" size=""/>
+            <assign variable="top" expression="0"/>
+            <assign variable="ort" expression="0"/>
+            <declare name="devam" type="Boolean" array="False" size=""/>
+            <assign variable="n" expression="0"/>
+            <assign variable="devam" expression="true"/>
+            <while expression="devam">
+                <output expression="&quot;2 say&#305; g&#305;rer m&#305;s&#305;n&#305;z&quot;" newline="True"/>
+                <input variable="x1"/>
+                <input variable="x2"/>
+                <if expression="x1=x2">
+                    <then>
+                        <assign variable="n" expression="n+2"/>
+                        <assign variable="top" expression="top+x1+x2"/>
+                        <assign variable="ort" expression="top/n"/>
+                        <assign variable="devam" expression="false"/>
+                    </then>
+                    <else>
+                        <assign variable="n" expression="n+2"/>
+                        <assign variable="top" expression="top+x1+x2"/>
+                        <assign variable="ort" expression="top/n"/>
+                    </else>
+                </if>
+            </while>
+            <output expression="&quot;ha ha 2 say&#305;y&#305; ayn&#305; g&#305;rd&#305;n al ortalamas&#305; :&quot; &amp;ort" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
